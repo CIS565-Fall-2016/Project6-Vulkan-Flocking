@@ -637,6 +637,7 @@ public:
 
 			// LOOK: we always run the graphics pipeline with compute.storageBufferB.
 			// How does this influence flip-flopping in draw()?
+			// Try drawing with storageBufferA instead of storageBufferB. What happens? Why?
 			VkDeviceSize offsets[1] = { 0 };
 			vkCmdBindVertexBuffers(drawCmdBuffers[i], VERTEX_BUFFER_BIND_ID, 1, &compute.storageBufferB.buffer, offsets);
 			vkCmdDraw(drawCmdBuffers[i], PARTICLE_COUNT, 1, 0, 0);
