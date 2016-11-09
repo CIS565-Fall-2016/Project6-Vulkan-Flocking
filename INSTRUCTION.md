@@ -123,18 +123,16 @@ Complete the TODOs `vulkanBoids.cpp`.
 When you have randomized velocities, the second descriptorSet, and
 flip-flopping done, you should be able to at least see some movement.
 
-Try disabling 
+Try disabling different blocks of code you wrote for each TODO.
+Observe what happens.
 
 ## 2.3: Let there be flocking!
-Tmplement the boids algorithm in `data/shaders/computeparticles/particle.comp`.
+Implement the boids algorithm in `data/shaders/computeparticles/particle.comp`.
 Keep in mind that whenever you change these shaders, you will need to regenerate
 SPIRV versions of these using the `generate-spirv.bat` script.
 
 ## Part 3: README.md
 Include a GIF of your final simulation. Answer the following questions:
-
-* What happens when you remove just the descriptorSet you wrote?
-* What happens when you remove just the flip-flopping you wrote?
 
 * What are some problems to keep in mind when using multiple Vulkan queues?
   * take into consideration that different queues may be backed by different hardware
