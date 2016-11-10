@@ -117,6 +117,10 @@ Follow the LOOK labels in the following files:
 * `particle.vert`
 * `particle.frag`
 
+Don't worry about reading and understanding every single line of code, just try
+to understand what each LOOK block describes in terms of how Vulkan controls the
+GPU (commands encapsulating pipelines + buffers, running on Queues).
+
 ## 2.2: Getting movement
 
 Complete the TODOs `vulkanBoids.cpp`.
